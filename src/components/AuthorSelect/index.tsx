@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Field } from "formik";
-import { AuthorsResponseBody } from "../../api/authors";
+import { AuthorsResponseBody } from "../../../pages/api/authors";
 
 const AuthorSelect: React.VFC<{ name: string }> = ({ name }) => {
   const [authors, setAuthors] = useState<AuthorsResponseBody>([]);

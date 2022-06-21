@@ -1,5 +1,5 @@
 import React from "react";
-import { useSearchQuery } from "../../../hooks/useSearchQuery";
+import { useSearchQuery } from "../../hooks/useSearchQuery";
 
 const Search: React.VFC = () => {
   const [value, onChange] = useSearchQuery();

@@ -1,6 +1,13 @@
 import React from "react";
+import BackButton from "../BackButton";
+import dynamic from "next/dynamic";
+import { useRouter } from "next/router";
+
+const Search = dynamic(() => import("../Search"));
 
 const NavBar: React.FC = () => {
+  const { pathname } = useRouter();
+
   return (
     <nav
       style={{
@@ -16,7 +23,9 @@ const NavBar: React.FC = () => {
         background: "#F4F5FF",
       }}
     >
-      {/* empty */}
+      {pathname === "/[slug]" && <BackButton />}
+
+      {pathname === "/" && <Search />}
     </nav>
   );
 };

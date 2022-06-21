@@ -1,5 +1,5 @@
 import type { NextApiRequest, NextApiResponse } from "next";
-import getAuthors from "../../utils/getAuthors";
+import getAuthors from "../../src/utils/getAuthors";
 
 export type AuthorsResponseBody = {
   _id: string;

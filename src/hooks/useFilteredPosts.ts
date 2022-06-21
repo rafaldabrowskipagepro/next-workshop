@@ -1,5 +1,5 @@
 import { useMemo } from "react";
-import { Post } from "../types";
+import { Post } from "../../types";
 import { useSearchQuery } from "./useSearchQuery";
 
 export const useFilteredPosts = (posts: Post[]) => {
