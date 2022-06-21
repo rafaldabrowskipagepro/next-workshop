@@ -1,5 +1,5 @@
-import { CreatePostRequestBody } from "../pages/api/create-post";
 import sanityClient from "../sanity";
+import { CreatePostRequestBody } from "../types";
 
 interface PostModel {
   title: string;

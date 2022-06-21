@@ -1,7 +1,7 @@
 import React from "react";
 import { useSearchQuery } from "../../../hooks/useSearchQuery";
 
-const Search = () => {
+const Search: React.VFC = () => {
   const [value, onChange] = useSearchQuery();
 
   return <input {...{ value, onChange }} placeholder="search..." />;

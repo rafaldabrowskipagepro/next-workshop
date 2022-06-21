@@ -1,7 +1,7 @@
-import { useRouter } from "next/dist/client/router";
 import React from "react";
 import BackButton from "../BackButton";
 import dynamic from "next/dynamic";
+import { useRouter } from "next/router";
 
 const Search = dynamic(() => import("../Search"));
 
