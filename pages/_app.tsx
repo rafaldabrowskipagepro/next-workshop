@@ -1,7 +1,13 @@
-import '../styles/globals.css'
-import type { AppProps } from 'next/app'
+import { NextQueryParamProvider } from "next-query-params";
+import type { AppProps } from "next/app";
+import React from "react";
+import "./global.css";
 
 function MyApp({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />
+  return (
+    <NextQueryParamProvider>
+      <Component {...pageProps} />
+    </NextQueryParamProvider>
+  );
 }
-export default MyApp
+export default MyApp;
