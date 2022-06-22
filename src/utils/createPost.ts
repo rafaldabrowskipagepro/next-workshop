@@ -27,7 +27,7 @@ const createPost = (post: CreatePostRequestBody) => {
     },
     slug: {
       _type: "slug",
-      current: post.title.toLocaleLowerCase().replace(/ /g, "-"),
+      current: `/${post.title.toLocaleLowerCase().replace(/ /g, "-")}`,
     },
   });
 };

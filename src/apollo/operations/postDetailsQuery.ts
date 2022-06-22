@@ -38,7 +38,7 @@ const getPost = async (slug: string) => {
   const { data } = await apolloClient.query<PostQuery, PostQueryVariables>({
     query,
     variables: {
-      slug,
+      slug: slug.startsWith("/") ? slug : `/${slug}`,
     },
   });
 
